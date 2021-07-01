@@ -8,7 +8,8 @@ define(['react', 'Wix'], function (React, Wix) {
     },
     componentDidMount: function () {
       const device = Wix.Utils.getDeviceType();
-      // this.updateCompHeight(600);
+      //
+      this.updateCompHeight(600);
       Wix.addEventListener(Wix.Events.SETTINGS_UPDATED, (data) =>
         this.onSettingsUpdate(data)
       );
@@ -16,11 +17,7 @@ define(['react', 'Wix'], function (React, Wix) {
         Wix.resizeWindow(400, 400, console.log('resize window on mount'));
       }
       Wix.addEventListener(Wix.Events.DEVICE_TYPE_CHANGED, function (event) {
-        Wix.resizeWindow(
-          400,
-          400,
-          console.log('resize window on change')
-        );
+        Wix.resizeWindow(400, 400, console.log('resize window on change'));
       });
     },
     onSettingsUpdate: function (update) {

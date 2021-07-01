@@ -1,5 +1,8 @@
 {
   "name": "tpa-demo-app-react-jsx",
+  "engines": {
+    "node": "10.16.0"
+  },
   "scripts": {
     "start": "node server.js"
   },
