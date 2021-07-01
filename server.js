@@ -8,6 +8,7 @@ new WebpackDevServer(webpack(config), {
     historyApiFallback: true,
     https: true //Change this to true when testing on a server
 }).listen(3000, 'localhost', function (err, result) {
+    console.log(result);
     if (err) {
         return console.log(err);
     }
